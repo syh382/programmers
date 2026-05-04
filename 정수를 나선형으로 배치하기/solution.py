@@ -27,6 +27,6 @@ def solution(n): #코드가 좀 길고 더러워 만족스럽지 않음.
     return lis
 """
 a = solution(5)
-for i in range(a):
+for i in a:
     print(i)
 """
