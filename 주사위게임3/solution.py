@@ -1,4 +1,4 @@
-def solution(a, b, c, d):# lis = [ex.count(i) for i in ex]로 선언했으면 좀더 깔끔하게 작성가능한 사실을 다른사람들의 풀이를보고 알게됨.
+def solution(a, b, c, d):# lis = [ex.count(i) for i in ex]로 선언했으면 좀 더 깔끔하게 작성 가능하다는 것을 다른 사람들의 풀이를 보고 알게 됨.
     ex = [a,b,c,d]
     lis = [0]*6
     for i in ex:
