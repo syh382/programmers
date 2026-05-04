@@ -1,4 +1,4 @@
-def solution(n): #코드가 좀 길고 더러워 만족스럽지 않음.
+def solution(n): #코드가 매우 길고 더러워 만족스럽지 않음.
     lis = [[0]*n for i in range(n)]
     x = []
     y = [0]
