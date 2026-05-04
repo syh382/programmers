@@ -1,4 +1,4 @@
-def solution(n): #코드가 좀 더럽고 길어 만족스럽지 않음
+def solution(n): #코드가 좀 길고 더러워 만족스럽지 않음.
     lis = [[0]*n for i in range(n)]
     x = []
     y = [0]
@@ -25,7 +25,8 @@ def solution(n): #코드가 좀 더럽고 길어 만족스럽지 않음
     for i in range(n**2):
         lis[y[i]][x[i]] = i+1
     return lis
-p = solution(5)
-for i in p:
+"""
+a = solution(5)
+for i in range(a):
     print(i)
-
+"""
