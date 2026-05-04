@@ -1,4 +1,4 @@
-def solution(n):
+def solution(n): #코드가 좀 더럽고 길어 만족스럽지 않음
     lis = [[0]*n for i in range(n)]
     x = []
     y = [0]
