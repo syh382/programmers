@@ -1,4 +1,4 @@
-def solution(n): #코드가 매우 길고 더러워 만족스럽지 않음.
+def solution(n): #코드가 매우 길고 더러워 만족스럽지 않음. 주관적 난이도 : 상
     lis = [[0]*n for i in range(n)]
     x = []
     y = [0]
@@ -25,8 +25,4 @@ def solution(n): #코드가 매우 길고 더러워 만족스럽지 않음.
     for i in range(n**2):
         lis[y[i]][x[i]] = i+1
     return lis
-"""
-a = solution(5)
-for i in a:
-    print(i)
-"""
+
