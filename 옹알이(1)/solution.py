@@ -1,4 +1,4 @@
-def solution(babbling):
+def solution(babbling): # 주관적 난이도 : 하
     result = 0
     for i,s in enumerate(babbling):
         for ii in ["aya","ye","woo","ma"]:
