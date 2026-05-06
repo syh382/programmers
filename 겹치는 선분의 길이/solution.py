@@ -10,3 +10,4 @@ def solution(lines):
     return lis.count(1)
 # 구현 실패_정답률 90% (논리 구조 오류 미해결, 정답 확인)
 # 재도전 예정 (선을 [0,1] 각 칸에 쌓는 방식으로 구현할것)
+# https://school.programmers.co.kr/learn/courses/30/lessons/120876
