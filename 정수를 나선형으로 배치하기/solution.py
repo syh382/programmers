@@ -25,7 +25,7 @@ def solution_old(n): #코드가 매우 길고 더러워 만족스럽지 않음. 
     for i in range(n**2):
         lis[y[i]][x[i]] = i+1
     return lis
-def solution(n): # 좌표를 직접 이동하는 좀더 효율적인 코드
+def solution(n): # 좌표를 직접 이동하는 좀더 짧은 코드
     result = [[x for x in range(1,n+1)] for i in range(n)]
     p = (1,0),(0,-1),(-1,0),(0,1)
     num,x,y,pnum = n+1,n-1,0,0
