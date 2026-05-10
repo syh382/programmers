@@ -7,3 +7,4 @@ def solution(s):
     return sum
 # 1점 주는 문제...
 # 주관적 난이도 최하
+# https://school.programmers.co.kr/learn/courses/30/lessons/120853
