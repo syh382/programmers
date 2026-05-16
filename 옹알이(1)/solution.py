@@ -1,14 +1,14 @@
-def solution(babbling): # 주관적 난이도 : 하
+def solution(babbling):
     result = 0
-    for i,s in enumerate(babbling):
+    for i,s in enumerate(babbling): # i = index, s = babbling[i]
         for ii in ["aya","ye","woo","ma"]:
             if ii in s:
-                babbling[i] = babbling[i].replace(ii, " ") # babbling[i].replace(ii, "")를 하면 양끝에 있던 문자가 붙어 결과값이 늘어나 틀리는 상황 발생
-                                                           # babbling[i].replace(ii, " ")로 변경후 for문 다음에 babbling[i] = babbling[i].replace(" ", "") 추가
-        babbling[i] = babbling[i].strip() # 맞춘후에 확인한 다른사람의 풀이에서 strip을 사용해 공백을 제거함 replace(" ", "") -> strip()으로 변경
-        if len(babbling[i]):
+                babbling[i] = babbling[i].replace(ii, " ") # 일치하는 부분을 공백으로 대체
+        babbling[i] = babbling[i].strip() # 공백 제거
+        if len(babbling[i]): # 리스트 안에 값이 남아있으면 발음할수 있는것으로 간주
             continue
-        else:
-            result+=1
+        result+=1 # 리스트에 값이 없을때 결과 + 1
     return result
-
+# 주관적 난이도 하
+# 공백 제거를 replace(" ", "")가 아닌 strip()으로 더 깔끔(?) 하게 하기
+# https://school.programmers.co.kr/learn/courses/30/lessons/120956
