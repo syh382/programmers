@@ -1,18 +1,15 @@
 def solution(polynomial):
-    polynomial = polynomial.split()
-    x,num = 0,0
-    for i in polynomial:
+    x,n = 0,0
+    for i in polynomial.split(" + "):
         if "x" in i:
-            if i == "x": x += 1
-            else:  x += int(i[0])
-        elif i.isdigit(): num += int(i)
+            if i[:-1].isdigit(): x+=int(i[:-1])
+            else: x+=1
+        else: n+=int(i)
     if x:
-        if num != 0:
-            if x == 1: return "x + " + str(num)
-            return str(x) + "x + " + str(num)
-        if num == 0:
-            if x == 1: return "x"
-            return str(x) + "x"
-    else: return str(num)
-    
-print(solution("1 + x + 5"))
+        if x == 1: x = ''
+        if n: return f"{x}x + {n}"
+        else: return f"{x}x"
+    else: return str(n)
+# 케이스 분류가 약간 헷갈리는 부분이 있었음
+# 주관적 난이도 중하
+# https://school.programmers.co.kr/learn/courses/30/lessons/120863
