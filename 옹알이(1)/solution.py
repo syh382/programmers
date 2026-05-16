@@ -9,6 +9,6 @@ def solution(babbling):
             continue
         result+=1 # 리스트에 값이 없을때 결과 + 1
     return result
-# 주관적 난이도 하
+# 주관적 난이도 하 
 # 공백 제거를 replace(" ", "")가 아닌 strip()으로 더 깔끔(?) 하게 하기
 # https://school.programmers.co.kr/learn/courses/30/lessons/120956
